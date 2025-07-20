@@ -1,0 +1,19 @@
+msf6 > db_nmap --min-hostgroup 96 -sV -n -T4 -O -F --version-light 10.0.3.25
+[-] Database not connected
+msf6 > db_nmap --min-hostgroup 96 -sV -n -T4 -O -F --version-light 10.0.3.25
+[*] Nmap: 'TCP/IP fingerprinting (for OS scan) requires root privileges.'
+[!] Running Nmap with sudo
+msf6 > db_nmap --min-hostgroup 96 -sV -n -T4 -O -F --version-light 10.0.3.25
+[*] Nmap: 'TCP/IP fingerprinting (for OS scan) requires root privileges.'
+[!] Running Nmap with sudo
+msf6 > db_nmap --min-hostgroup 96 -sV -n -T4 -O -F --version-light 10.0.3.25
+[*] Nmap: 'TCP/IP fingerprinting (for OS scan) requires root privileges.'
+[!] Running Nmap with sudo
+[*] Nmap: 'sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper'
+[*] Nmap: 'sudo: a password is required'
+msf6 > db_nmap --min-hostgroup 96 -sV -n -T4 -O -F --version-light 10.0.3.0/25
+[*] Nmap: 'TCP/IP fingerprinting (for OS scan) requires root privileges.'
+[!] Running Nmap with sudo
+[*] Nmap: 'sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper'
+[*] Nmap: 'sudo: a password is required'
+[*] Command shell session 1 opened (10.0.3.24:13981 -> 10.0.3.25:37717) at 2021-05-04 15:59:10 +0200

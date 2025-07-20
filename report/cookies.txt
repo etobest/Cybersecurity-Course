@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.webscantest.com	TRUE	/	FALSE	1999999999	NB_SRVID	srv140717
+www.webscantest.com	TRUE	/	FALSE	1999999999	TEST_SESSIONID	fob92sarln1nqqc9chifmrh0m1
+www.webscantest.com	TRUE	/	FALSE	1999999999	aspNetSim	1
+www.webscantest.com	TRUE	/	FALSE	1999999999	__RequestVerificationToken	predefinedtoken
+

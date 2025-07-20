@@ -1,0 +1,255 @@
+[05/04/2021 10:22:48] [e(0)] core: Failed to connect to the database: No database YAML file
+[05/04/2021 10:22:49] [d(0)] core: Created user based module store
+[05/04/2021 10:23:08] [e(0)] core: Dependency for windows/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 10:23:08] [e(0)] core: Dependency for windows/x64/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 10:23:08] [e(0)] core: Dependency for windows/encrypted_reverse_tcp is not supported
+[05/04/2021 10:23:08] [e(0)] core: Dependency for windows/x64/encrypted_reverse_tcp is not supported
+[05/04/2021 10:31:10] [d(0)] core: Module generic/custom is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 10:31:10] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 10:31:10] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 13:06:07] [e(0)] core: Dependency for windows/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 13:06:07] [e(0)] core: Dependency for windows/x64/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 13:06:07] [e(0)] core: Dependency for windows/encrypted_reverse_tcp is not supported
+[05/04/2021 13:06:07] [e(0)] core: Dependency for windows/x64/encrypted_reverse_tcp is not supported
+[05/04/2021 13:09:52] [w(0)] core: monitor_rsock: exception during read: IOError stream closed in another thread
+[05/04/2021 13:09:52] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - IOError stream closed in another thread
+[05/04/2021 13:11:13] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 13:11:13] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 13:16:45] [e(0)] rex: Proc::on_request - NoMethodError undefined method `to_msgpack' for /.*/:Regexp
+[05/04/2021 13:22:10] [e(0)] core: Dependency for windows/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 13:22:10] [e(0)] core: Dependency for windows/x64/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 13:22:10] [e(0)] core: Dependency for windows/encrypted_reverse_tcp is not supported
+[05/04/2021 13:22:10] [e(0)] core: Dependency for windows/x64/encrypted_reverse_tcp is not supported
+[05/04/2021 15:25:20] [e(0)] core: Thread Exception: db_nmap-Stderr  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:2030:in `run_nmap'
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:1627:in `block in cmd_db_nmap'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/activerecord-5.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `with_connection'
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:1589:in `cmd_db_nmap'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:542:in `run_command'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:491:in `block in run_single'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:485:in `each'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:485:in `run_single'
+    /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:157:in `run'
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `block in initialize'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - LocalJumpError unexpected return
+[05/04/2021 15:26:49] [e(0)] rex: Proc::on_request - NoMethodError undefined method `to_msgpack' for /.*/:Regexp
+[05/04/2021 15:32:29] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 15:32:29] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 15:32:29] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 15:32:29] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 15:32:29] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 15:32:29] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 15:32:29] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 15:32:29] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 15:32:29] [e(0)] core: Thread Exception: WebConsoleShell  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `initialize'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `new'
+    /usr/share/metasploit-framework/lib/msf/ui/web/driver.rb:62:in `create_console'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/rpc_console.rb:28:in `rpc_create'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `block in process'
+    /usr/lib/ruby/2.7.0/timeout.rb:95:in `block in timeout'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `block in catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:33:in `catch'
+    /usr/lib/ruby/2.7.0/timeout.rb:110:in `timeout'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:142:in `process'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:80:in `on_request_uri'
+    /usr/share/metasploit-framework/lib/msf/core/rpc/v10/service.rb:61:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/proto/http/handler/proc.rb:38:in `on_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:367:in `dispatch_request'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:301:in `on_client_data'
+    /usr/share/metasploit-framework/lib/rex/proto/http/server.rb:160:in `block in start'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:48:in `on_client_data'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:199:in `block in monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `each'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:197:in `monitor_clients'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/rex-core-0.1.16/lib/rex/io/stream_server.rb:73:in `block in start'
+    /usr/share/metasploit-framework/lib/rex/thread_factory.rb:22:in `block in spawn'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - TypeError no implicit conversion of nil into String
+[05/04/2021 15:32:29] [d(0)] core: monitor_rsock: EOF in rsock
+[05/04/2021 15:32:29] [w(0)] core: monitor_rsock: the remote socket is nil, exiting loop
+[05/04/2021 15:34:05] [e(0)] rex: Proc::on_request - NoMethodError undefined method `to_msgpack' for /.*/:Regexp
+[05/04/2021 15:52:33] [e(0)] core: Dependency for windows/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 15:52:33] [e(0)] core: Dependency for windows/x64/encrypted_shell_reverse_tcp is not supported
+[05/04/2021 15:52:33] [e(0)] core: Dependency for windows/encrypted_reverse_tcp is not supported
+[05/04/2021 15:52:33] [e(0)] core: Dependency for windows/x64/encrypted_reverse_tcp is not supported
+[05/04/2021 15:54:05] [e(0)] core: Thread Exception: db_nmap-Stderr  critical=false    source:
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:2030:in `run_nmap'
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:1627:in `block in cmd_db_nmap'
+    /usr/share/metasploit-framework/vendor/bundle/ruby/2.7.0/gems/activerecord-5.2.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `with_connection'
+    /usr/share/metasploit-framework/lib/msf/ui/console/command_dispatcher/db.rb:1589:in `cmd_db_nmap'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:542:in `run_command'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:491:in `block in run_single'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:485:in `each'
+    /usr/share/metasploit-framework/lib/rex/ui/text/dispatcher_shell.rb:485:in `run_single'
+    /usr/share/metasploit-framework/lib/rex/ui/text/shell.rb:157:in `run'
+    /usr/share/metasploit-framework/lib/msf/ui/web/web_console.rb:75:in `block in initialize'
+    /usr/share/metasploit-framework/lib/msf/core/thread_manager.rb:105:in `block in spawn' - LocalJumpError unexpected return
+[05/04/2021 15:57:32] [d(0)] core: Module generic/custom is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:57:32] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:57:32] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:57:34] [d(0)] core: Module generic/custom is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:57:34] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:57:34] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:58:34] [d(0)] core: Module generic/custom is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:58:34] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:58:34] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/ftp/vsftpd_234_backdoor for PayloadType: limiter was cmd_interact
+[05/04/2021 15:59:05] [d(0)] core: Module generic/custom is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:05] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:05] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:06] [d(0)] core: Module generic/custom is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:06] [d(0)] core: Module generic/shell_bind_tcp is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:06] [d(0)] core: Module generic/shell_reverse_tcp is incompatible with unix/misc/distcc_exec for PayloadType: limiter was cmd cmd_bash
+[05/04/2021 15:59:06] [w(0)] core: monitor_rsock: exception during read: IOError sysread for buffered IO
+[05/06/2021 09:38:36] [e(0)] core: Dependency for windows/encrypted_shell_reverse_tcp is not supported
+[05/06/2021 09:38:36] [e(0)] core: Dependency for windows/x64/encrypted_shell_reverse_tcp is not supported
+[05/06/2021 09:38:36] [e(0)] core: Dependency for windows/encrypted_reverse_tcp is not supported
+[05/06/2021 09:38:36] [e(0)] core: Dependency for windows/x64/encrypted_reverse_tcp is not supported
+[05/06/2021 09:38:38] [e(0)] core: Errno::EACCES : Permission denied @ rb_sysopen - /root/updater.exe
+/usr/bin/msfvenom:487:in `initialize'
+/usr/bin/msfvenom:487:in `open'
+/usr/bin/msfvenom:487:in `<main>'

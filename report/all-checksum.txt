@@ -1,0 +1,13 @@
+platform=1616655207000
+cluster.maltego=1616655207000
+cluster.groovy=1616655207000
+cluster.ide=1616655207000
+cluster.java=1616655207000
+cluster.maltego-ui=1616655207000
+cluster.maltego-core-platform=1616655207000
+user=1616655207000
+crc=7
+locale=en_US
+branding=maltego
+java.version=11.0.11-ea
+java.vm.version=11.0.11-ea+4-post-Debian-1

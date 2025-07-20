@@ -1,0 +1,823 @@
+-------------------------------------------------------------------------------
+>Log Session: Monday, June 20, 2022 at 6:05:35 PM Central European Summer Time
+>System Info: 
+  Product Version         = Maltego Commercial 20200519-unknown-revn
+  Operating System        = Linux version 5.10.0-kali3-amd64 running on amd64
+  Java; VM; Vendor        = 11.0.11-ea; OpenJDK 64-Bit Server VM 11.0.11-ea+4-post-Debian-1; Debian
+  Runtime                 = OpenJDK Runtime Environment 11.0.11-ea+4-post-Debian-1
+  Java Home               = /usr/lib/jvm/java-11-openjdk-amd64
+  System Locale; Encoding = en_US (maltego); UTF-8
+  Home Directory          = /home/vittoriol
+  Current Directory       = /usr/share/maltego/bin
+  User Directory          = /home/vittoriol/.maltego/v4.2.16
+  Cache Directory         = /home/vittoriol/.maltego/v4.2.16/var/cache
+  Installation            = /usr/share/maltego/maltego
+                            /usr/share/maltego/groovy
+                            /usr/share/maltego/ide
+                            /usr/share/maltego/java
+                            /usr/share/maltego/maltego-ui
+                            /usr/share/maltego/maltego-core-platform
+                            /usr/share/maltego/platform
+  Boot & Ext. Classpath   = 
+  Application Classpath   = /usr/share/maltego/platform/lib/boot.jar:/usr/share/maltego/platform/lib/org-openide-modules.jar:/usr/share/maltego/platform/lib/org-openide-util.jar:/usr/share/maltego/platform/lib/org-openide-util-lookup.jar:/usr/share/maltego/platform/lib/org-openide-util-ui.jar
+  Startup Classpath       = /usr/share/maltego/platform/core/core-base.jar:/usr/share/maltego/platform/core/core.jar:/usr/share/maltego/platform/core/asm-commons-7.2.jar:/usr/share/maltego/platform/core/org-netbeans-libs-asm.jar:/usr/share/maltego/platform/core/asm-7.2.jar:/usr/share/maltego/platform/core/asm-tree-7.2.jar:/usr/share/maltego/platform/core/org-openide-filesystems.jar:/usr/share/maltego/maltego/core/locale/core_maltego.jar
+-------------------------------------------------------------------------------
+WARNING [org.netbeans.core.modules]: module y does not declare OpenIDE-Module-Public-Packages in its manifest, so all packages are considered public by default: http://bits.netbeans.org/dev/javadoc/org-openide-modules/org/openide/modules/doc-files/api.html#how-vers
+18:06:20.549 INFO [com.paterva.maltego.util.Installer]: The User Directory is writable: /home/vittoriol/.maltego/v4.2.16
+18:06:20.552 INFO [com.paterva.maltego.util.Installer]: The Cache Directory is writable: /home/vittoriol/.maltego/v4.2.16/var/cache
+18:06:20.552 INFO [com.paterva.maltego.util.Installer]: The Temp Directory is writable: /tmp
+18:06:23.675 INFO [org.officelaf.Installer]: Default Text Antialias (JRE) = OFF
+18:06:23.676 INFO [org.officelaf.Installer]: Desktop Text Antialias (Swing) = ON (Before modified from preferences)
+18:06:23.738 INFO [org.officelaf.Installer]: Desktop Text Antialias (Swing) = LCD_HRGB (After modified from preferences)
+18:06:23.844 INFO [org.officelaf.Installer]: SVG reader plugin expected: class com.twelvemonkeys.imageio.plugins.svg.SVGImageReader
+18:06:24.538 INFO [org.officelaf.Installer]: SVG reader plugin found: com.twelvemonkeys.imageio.plugins.svg.SVGImageReader@2a7f3c77
+18:06:24.538 INFO [org.officelaf.Installer]: WebP reader plugin expected: class com.luciad.imageio.webp.WebPImageReaderSpi
+18:06:24.588 INFO [org.officelaf.Installer]: WebP reader plugin found: com.luciad.imageio.webp.WebPReader@2097a57f
+18:06:24.588 INFO [org.officelaf.Installer]: ICO reader plugin expected: class com.twelvemonkeys.imageio.plugins.bmp.ICOImageReader
+18:06:24.688 INFO [org.officelaf.Installer]: ICO reader plugin found: com.twelvemonkeys.imageio.plugins.bmp.ICOImageReader@1dcca24d
+18:06:24.688 INFO [org.officelaf.Installer]: TIFF reader plugin expected: class com.twelvemonkeys.imageio.plugins.tiff.TIFFImageReader
+18:06:24.959 INFO [org.officelaf.Installer]: TIFF reader plugin found: com.github.jaiimageio.impl.plugins.tiff.TIFFImageReader@254c62ee
+18:06:25.037 INFO [org.officelaf.Installer]: TIFF reader plugin found: com.sun.imageio.plugins.tiff.TIFFImageReader@76036eb4
+18:06:25.197 INFO [org.officelaf.Installer]: TIFF reader plugin found: com.twelvemonkeys.imageio.plugins.tiff.TIFFImageReader@6ba28156
+18:06:25.233 INFO [org.officelaf.Installer]: TIF reader plugin found: com.github.jaiimageio.impl.plugins.tiff.TIFFImageReader@130498a5
+18:06:25.233 INFO [org.officelaf.Installer]: TIF reader plugin found: com.sun.imageio.plugins.tiff.TIFFImageReader@5599d339
+18:06:25.233 INFO [org.officelaf.Installer]: TIF reader plugin found: com.twelvemonkeys.imageio.plugins.tiff.TIFFImageReader@388271f0
+18:06:25.241 INFO [org.officelaf.Installer]: BMP reader plugin expected: class com.twelvemonkeys.imageio.plugins.bmp.BMPImageReader
+18:06:25.281 INFO [org.officelaf.Installer]: BMP reader plugin found: com.github.jaiimageio.impl.plugins.bmp.BMPImageReader@4755ff87
+18:06:25.290 INFO [org.officelaf.Installer]: BMP reader plugin found: com.twelvemonkeys.imageio.plugins.bmp.BMPImageReader@70a39678
+18:06:25.299 INFO [org.officelaf.Installer]: BMP reader plugin found: com.sun.imageio.plugins.bmp.BMPImageReader@6bb8934e
+18:06:25.405 INFO [org.officelaf.Installer]: JPEG reader plugin found: com.sun.imageio.plugins.jpeg.JPEGImageReader@401e7238
+18:06:25.447 INFO [org.officelaf.Installer]: JPG reader plugin found: com.sun.imageio.plugins.jpeg.JPEGImageReader@28df147b
+18:06:25.474 INFO [org.officelaf.Installer]: PNG reader plugin found: com.sun.imageio.plugins.png.PNGImageReader@4423574e
+18:06:25.523 INFO [org.officelaf.Installer]: GIF reader plugin found: com.sun.imageio.plugins.gif.GIFImageReader@6b2e8e67
+18:06:25.540 INFO [org.officelaf.MaltegoLAFRefresher]: LAF: linux: com.bulenkov.darcula.DarculaLaf
+18:06:34.025 INFO [null]: Last record repeated again.
+18:06:29.723 INFO [org.netbeans.core2.network.proxy.NetworkProxyReloader]: System network proxy resolver: no suitable found, using fallback.
+18:06:29.736 INFO [org.netbeans.core2.network.proxy.fallback.FallbackNetworkProxy]: Fallback system proxy resolver: no http_proxy variable found
+18:06:29.756 INFO [org.netbeans.core2.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded.
+18:06:29.759 INFO [org.netbeans.core2.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
+18:06:29.898 INFO [com.paterva.maltego.seeds.ui.LicenseModeHubProvider]: Loading Hub
+18:06:30.311 INFO [com.paterva.maltego.licensing.ui.Installer]: License mode: Unknown
+18:06:30.311 INFO [com.paterva.maltego.util.Installer]: Version: Maltego 4.2.16.13775
+18:06:31.070 INFO [com.paterva.maltego.java.config.ui.Installer]: IP Settings: Java managed = true [Before removing IPv4]
+18:06:32.154 INFO [com.paterva.maltego.java.config.ui.Installer]: IP Settings: Java managed = true
+18:06:32.155 WARNING [com.paterva.maltego.java.config.ui.Installer]: Running on 64-bit Java
+18:06:35.172 INFO [org.netbeans.core.startup.NbEvents]: Turning on modules:
+18:06:35.176 	org.openide.util.lookup [8.41 20200519-unknown-revn]
+	org.openide.util [9.15 20200519-unknown-revn]
+	org.openide.util.ui [9.16 20200519-unknown-revn]
+	org.openide.modules [7.56 20200519-unknown-revn]
+	org.netbeans.libs.xerces/1 [1.46.0 20200519-unknown-revn]
+	y [2.6 130620]
+	com.maltego.xpp3 [1.1 210324]
+	org.simpleframework.xml [2.3.11 210324]
+	org.pushingpixels.trident [2.2 210324]
+	org.pushingpixels.flamingo [2.7 210324]
+	org.netbeans.api.annotations.common/1 [1.35 20200519-unknown-revn]
+	org.openide.filesystems [9.18 20200519-unknown-revn]
+	org.openide.awt [7.76 20200519-unknown-revn]
+	org.netbeans.swing.plaf [1.50 20200519-unknown-revn]
+	org.netbeans.api.progress/1 [1.55 20200519-unknown-revn]
+	org.netbeans.api.progress.nb [1.55 20200519-unknown-revn]
+	org.openide.dialogs [7.50 20200519-unknown-revn]
+	org.openide.nodes [7.53 20200519-unknown-revn]
+	org.openide.windows [6.85 20200519-unknown-revn]
+	org.netbeans.swing.tabcontrol [1.64 20200519-unknown-revn]
+	org.netbeans.swing.outline [1.42 20200519-unknown-revn]
+	org.openide.explorer [6.70 20200519-unknown-revn]
+	org.netbeans.modules.editor.mimelookup/1 [1.48 20200519-unknown-revn]
+	org.openide.text [6.75 20200519-unknown-revn]
+	org.openide.actions [6.47 20200519-unknown-revn]
+	org.netbeans.modules.keyring [1.32 20200519-unknown-revn]
+	org.netbeans.api.intent [1.10 20200519-unknown-revn]
+	org.netbeans.api.io [1.11 20200519-unknown-revn]
+	org.openide.io [1.57 20200519-unknown-revn]
+	org.netbeans.libs.asm [5.11 20200519-unknown-revn]
+	org.netbeans.bootstrap/1 [2.86 20200519-unknown-revn]
+	org.netbeans.core.startup.base [1.70.0 1 20200519-unknown-revn]
+	org.netbeans.core.startup/1 [1.70.0 20200519-unknown-revn]
+	org.netbeans.api.scripting [1.5 20200519-unknown-revn]
+	org.netbeans.modules.queries/1 [1.51 20200519-unknown-revn]
+	org.netbeans.api.templates [1.16 20200519-unknown-revn]
+	org.openide.filesystems.nb [9.18 20200519-unknown-revn]
+	org.openide.loaders [7.76 20200519-unknown-revn]
+	org.netbeans.modules.sampler [1.22 20200519-unknown-revn]
+	org.netbeans.core/2 [3.59 20200519-unknown-revn]
+	org.phansson.netbeans.net.nbnetauthenticator [1.7 210324]
+	org.netbeans.libs.batik.read [1.1.0.1 1 20200519-unknown-revn]
+	org.openide.util.ui.svg [1.1 20200519-unknown-revn]
+	org.openide.execution [9.11 20200519-unknown-revn]
+	org.netbeans.spi.tasklist/1 [1.43.0.1 1 20200519-unknown-revn]
+	org.netbeans.spi.quicksearch [1.35 20200519-unknown-revn]
+	org.netbeans.spi.palette/1 [1.54 20200519-unknown-revn]
+	org.netbeans.spi.navigator/1 [1.46 20200519-unknown-revn]
+	org.netbeans.modules.editor.settings/1 [1.65 20200519-unknown-revn]
+	org.netbeans.modules.editor.util/1 [1.73 20200519-unknown-revn]
+	org.netbeans.modules.editor.document [1.17.0.3 3 20200519-unknown-revn]
+	org.netbeans.modules.lexer/2 [1.71.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.editor.lib2/1 [2.28.0.55.3 55 20200519-unknown-revn]
+	org.netbeans.modules.editor.settings.lib [1.59.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.editor.fold/1 [1.53 20200519-unknown-revn]
+	org.netbeans.modules.editor.indent/2 [1.51 20200519-unknown-revn]
+	org.netbeans.modules.editor.guards/1 [1.41 20200519-unknown-revn]
+	org.netbeans.modules.editor.lib/3 [4.15.0.23.3.55 23 20200519-unknown-revn]
+	org.netbeans.spi.editor.hints/0 [1.50.0.7.55 7 20200519-unknown-revn]
+	org.netbeans.modules.settings/1 [1.57 20200519-unknown-revn]
+	org.netbeans.modules.sendopts/2 [2.44 20200519-unknown-revn]
+	org.netbeans.modules.options.api/1 [1.53 20200519-unknown-revn]
+	org.netbeans.modules.options.keymap [1.45 20200519-unknown-revn]
+	org.netbeans.modules.editor.settings.storage/1 [1.60.0 20200519-unknown-revn]
+	org.netbeans.modules.editor.fold.nbui [1.20.0.55 20200519-unknown-revn]
+	org.netbeans.modules.editor/3 [1.95.0.6.3.23.55 6 20200519-unknown-revn]
+	org.netbeans.modules.options.editor/1 [1.68 20200519-unknown-revn]
+	org.netbeans.modules.editor.errorstripe.api/1 [2.40.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.editor.errorstripe/2 [2.42.0.1.1 1 20200519-unknown-revn]
+	org.netbeans.modules.projectapi/1 [1.75 20200519-unknown-revn]
+	org.netbeans.modules.diff/1 [1.59.0.42.1 42 20200519-unknown-revn]
+	org.netbeans.api.java.classpath/1 [1.62 20200519-unknown-revn]
+	org.netbeans.libs.lucene/3 [3.27 20200519-unknown-revn]
+	org.netbeans.modules.masterfs/2 [2.63.0.2 2 20200519-unknown-revn]
+	org.netbeans.modules.parsing.lucene/2 [2.43.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.parsing.api/1 [9.15.0.8 8 20200519-unknown-revn]
+	org.netbeans.modules.projectuiapi.base/1 [1.93.0.9 9 20200519-unknown-revn]
+	org.netbeans.modules.project.indexingbridge [1.25 20200519-unknown-revn]
+	org.netbeans.modules.parsing.indexing [9.16.0.1.3.8 1 20200519-unknown-revn]
+	org.netbeans.modules.refactoring.api [1.55.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.projectuiapi/1 [1.96.0.8 8 20200519-unknown-revn]
+	org.netbeans.modules.projectapi.nb [1.11 20200519-unknown-revn]
+	org.netbeans.modules.progress.ui [1.41 20200519-unknown-revn]
+	org.netbeans.modules.parsing.nb [1.11.0.8.1 20200519-unknown-revn]
+	org.netbeans.modules.masterfs.nio2 [1.23 20200519-unknown-revn]
+	org.netbeans.libs.jna/2 [2.4 20200826-unknown-revn]
+	org.netbeans.modules.masterfs.linux [1.21 20200519-unknown-revn]
+	org.netbeans.modules.libs.groovy [2.6 20200519-unknown-revn]
+	org.netbeans.modules.lexer.nbbridge/1 [1.40.0.1 20200519-unknown-revn]
+	org.netbeans.core.ui/1 [1.53 20200519-unknown-revn]
+	org.netbeans.api.search [1.29 20200519-unknown-revn]
+	org.netbeans.modules.jumpto/1 [1.63.0.1 1 20200519-unknown-revn]
+	org.netbeans.libs.javacapi [8.29.0.3 3 20200519-unknown-revn]
+	org.netbeans.libs.javacimpl/1 [0.55.0.25 25 20200519-unknown-revn]
+	org.netbeans.api.java/1 [1.73 20200519-unknown-revn]
+	org.netbeans.modules.java.platform/1 [1.50 20200519-unknown-revn]
+	org.netbeans.modules.classfile/1 [1.60 20200519-unknown-revn]
+	org.netbeans.modules.editor.indent.support [1.50 20200519-unknown-revn]
+	org.netbeans.core.multiview/1 [1.52 20200519-unknown-revn]
+	org.netbeans.lib.nbjavac [1.24.0.3.25 3 20200519-unknown-revn]
+	org.netbeans.modules.java.lexer/1 [1.43 20200519-unknown-revn]
+	org.netbeans.modules.java.preprocessorbridge [1.57.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.java.source.base [2.46.0 5 20200519-unknown-revn]
+	org.netbeans.modules.autoupdate.services [1.57.1 20190805-unknown-revn]
+	org.netbeans.modules.autoupdate.ui [1.49.1 20190805-unknown-revn]
+	org.netbeans.modules.editor.indent.project/0 [1.30 20200519-unknown-revn]
+	org.netbeans.modules.java.source [0.172.0.32.3.25.5.1 32 20200519-unknown-revn]
+	org.netbeans.modules.java.sourceui/1 [1.53.0.1.25.32.5 1 20200519-unknown-revn]
+	org.netbeans.modules.editor.bracesmatching/0 [1.47.0.55 20200519-unknown-revn]
+	org.netbeans.modules.editor.completion/1 [1.52.0.2 2 20200519-unknown-revn]
+	org.netbeans.modules.editor.codetemplates/1 [1.51.0.1 1 20200519-unknown-revn]
+	org.netbeans.modules.editor.breadcrumbs/0 [1.25 20200519-unknown-revn]
+	org.netbeans.modules.editor.actions/1 [1.39.0.55 20200519-unknown-revn]
+	org.netbeans.modules.csl.types/1 [1.8 20200519-unknown-revn]
+	org.netbeans.modules.csl.api/2 [2.62.0.2.1.1.8.1 2 20200519-unknown-revn]
+	org.netbeans.modules.groovy.editor/2 [1.71 20200519-unknown-revn]
+	org.netbeans.modules.extexecution.base/2 [1.12 20200519-unknown-revn]
+	org.netbeans.modules.extexecution/2 [1.56 20200519-unknown-revn]
+	org.netbeans.modules.extbrowser/1 [1.62 20200918-unknown-revn]
+	org.netbeans.modules.editor.plain.lib/1 [1.41 20200519-unknown-revn]
+	org.netbeans.modules.editor.plain/2 [1.43 20200519-unknown-revn]
+	org.netbeans.modules.editor.mimelookup.impl/1 [1.40 20200519-unknown-revn]
+	org.netbeans.libs.osgi [1.30 20200519-unknown-revn]
+	org.netbeans.libs.felix [2.23 20200519-unknown-revn]
+	org.netbeans.libs.commons_compress/0 [0.14.0.181 181 20200519-unknown-revn]
+	org.netbeans.core2 [2.13 210324]
+	org.netbeans.core.windows/2 [2.93 20200519-unknown-revn]
+	org.netbeans.core.output2/1 [1.50.1 20200525-unknown-revn]
+	org.netbeans.core.netigso [1.39 20200519-unknown-revn]
+	org.netbeans.core.io.ui/1 [1.38 20200519-unknown-revn]
+	org.netbeans.core.execution/1 [1.49 20200519-unknown-revn]
+	org.lobobrowser [2.5 210324]
+	org.jdesktop.swingx [2.1 210324]
+	org.java_websocket [2.0 210324]
+	org.bouncycastle [1.2 210324]
+	org.apache.poi [2.4 210324]
+	org.apache.commons.validator [1.1 210324]
+	org.apache.commons.lang.maltego [1.2 210324]
+	org.apache.commons.io.maltego [1.3 210324]
+	net.lingala.zip4j [2.2.5 210324]
+	javax.media [1.2 210324]
+	inet.ipaddr [1.2 210324]
+	gov.nist.isg [1.1 210324]
+	com.twelvemonkeys.imageio [1.3 210324]
+	com.pinkmatter.pandora [2.2 210324]
+	com.paterva.maltego.util [2.112 210324]
+	com.bulenkov.darcula [2.20 210324]
+	com.googlecode.libphonenumber [1.1 210324]
+	com.paterva.maltego.typing [2.14 210324]
+	com.paterva.maltego.core [2.12 210324]
+	com.paterva.maltego.api [2.3 210324]
+	com.paterva.maltego.graph [2.7 210324]
+	com.paterva.maltego.graph.store [2.7 210324]
+	com.paterva.maltego.graph.selection [2.4 210324]
+	com.paterva.maltego.graph.wrapper [2.7 210324]
+	com.paterva.maltego.imgfactoryapi [2.15 210324]
+	com.paterva.maltego.typing.descriptor [2.7 210324]
+	com.paterva.maltego.entity.api [2.15 210324]
+	com.fasterxml.jackson.core [1.6 210324]
+	com.google.guava.maltego [1.2 210324]
+	com.paterva.maltego.certificates [1.19 210324]
+	com.paterva.maltego.util.ui [2.35 210324]
+	apple.laf [2.0 210324]
+	com.luciad.imageio.webp [1.2 210324]
+	com.paterva.maltego.laf [2.18 210324]
+	com.paterva.maltego.sound [2.5 210324]
+	com.pinkmatter.modules.flamingo [2.7 210324]
+	com.paterva.maltego.xmpp [2.6 210324]
+	com.paterva.maltego.crypto [1.5 210324]
+	com.paterva.maltego.rest [1.2 210324]
+	com.google.gson.maltego [2.1 210324]
+	com.paterva.maltego.licensing [2.26 210324]
+	com.paterva.maltego.entities.common [2.11 210324]
+	com.paterva.maltego.opencsv [2.1 210324]
+	com.paterva.maltego.graph.cache [2.6 210324]
+	com.paterva.maltego.archive.mtz [2.8 210324]
+	com.paterva.entity.serializer [2.5 210324]
+	com.paterva.maltego.entity.registry [2.16 210324]
+	com.paterva.maltego.matching [2.9 210324]
+	com.paterva.maltego.transform.api [2.3 210324]
+	com.paterva.maltego.transform.descriptor [2.12 210324]
+	com.paterva.maltego.icons.affiliations [2.3 210324]
+	com.paterva.maltego.icons.people [2.2 210324]
+	com.paterva.maltego.icons.technology [2.6 210324]
+	com.paterva.maltego.icons.threats [2.2 210324]
+	com.paterva.maltego.icons.transportation_locations [2.2 210324]
+	com.paterva.maltego.icons.viewlets [2.1 210324]
+	com.paterva.maltego.icons.flags [1.2 210324]
+	com.paterva.maltego.icons.general [2.2 210324]
+	com.paterva.maltego.imgfactory [2.23 210324]
+	com.paterva.maltego.typing.editing [2.15 210324]
+	com.paterva.maltego.transform.gen [1.6 210324]
+	com.paterva.maltego.transform.repository [2.11 210324]
+	com.paterva.maltego.pws.api [2.6 210324]
+	com.paterva.maltego.merging [2.16 210324]
+	com.paterva.maltego.transform.runner.api [2.13 210324]
+	com.paterva.maltego.transform.protocol.v2api [2.30 210324]
+	com.paterva.maltego.seeds.api [2.19 210324]
+	com.paterva.maltego.licensing.ui [2.32 210324]
+	com.paterva.maltego.java.config.ui [2.16 210324]
+	com.paterva.maltego.bookmarks.ui [2.0 210324]
+	com.paterva.maltego.view.customization.api [2.5 210324]
+	com.paterva.maltego.runregistry [2.4 210324]
+	com.paterva.maltego.importexport [2.9 210324]
+	com.paterva.maltego.customicons [2.21 210324]
+	com.paterva.maltego.entity.manager [2.23 210324]
+	com.paterva.maltego.treelist.lazy [2.6 210324]
+	com.paterva.maltego.serializers [2.11 210324]
+	com.paterva.maltego.treelist.parts [2.9 210324]
+	com.ctc.wstx [2.1 210324]
+	com.paterva.maltego.ui.graph [2.39 210324]
+	com.paterva.maltego.welcome [2.24 210324]
+	com.paterva.maltego.webtx [2.6 210324]
+	com.paterva.maltego.graph.undo [2.7 210324]
+	com.paterva.maltego.layout [2.9 210324]
+	com.paterva.maltego.view.mining [2.5 210324]
+	com.paterva.maltego.detailview [2.13 210324]
+	com.paterva.maltego.view.list [2.5 210324]
+	com.paterva.maltego.view.customization.ui [2.9 210324]
+	com.paterva.maltego.view.ball [2.6 210324]
+	com.paterva.maltego.notifications [1.8 210324]
+	com.paterva.maltego.graph.table [1.6 210324]
+	com.paterva.maltego.graph.table.io [2.17 210324]
+	com.paterva.maltego.transforms.tabular [1.7 210324]
+	com.paterva.maltego.tabular.transforms.run [1.7 210324]
+	com.paterva.maltego.error.reporting.ui [1.6 210324]
+	com.paterva.maltego.transform.discovery [2.11 210324]
+	com.paterva.maltego.transform.finder [2.19 210324]
+	com.paterva.maltego.tx.inputs.global [2.5 210324]
+	com.paterva.maltego.transform.manager [2.13 210324]
+	com.paterva.maltego.transform.runner [2.26 210324]
+	com.paterva.maltego.certificates.ui [1.18 210324]
+	com.paterva.maltego.seeds.ui [2.31 210324]
+	com.paterva.maltego.graph.csv.io [2.8 210324]
+	com.paterva.maltego.graph.excel.io [2.11 210324]
+	com.paterva.maltego.graph.table.ui [2.18 210324]
+	com.paterva.maltego.transforms.tabular.ui [1.8 210324]
+	com.paterva.maltego.tx.inputs.global.ui [2.7 210324]
+	com.maltego.graalvm.javascript [1.3 210324]
+	com.github.scribejava [2.1 210324]
+	com.paterva.maltego.pws [2.13 210324]
+	com.paterva.maltego.update.kit.commercial [2.13 210324]
+	com.paterva.maltego.transform.protocol.v2 [2.11 210324]
+	com.paterva.maltego.satelliteview [2.4 210324]
+	com.paterva.maltego.runviews [2.9 210324]
+	com.paterva.maltego.reporting [2.14 210324]
+	com.paterva.maltego.propertyview [2.8 210324]
+	com.paterva.maltego.mtgx [2.10 210324]
+	com.paterva.maltego.icons [1.1 210324]
+	com.paterva.maltego.graph.store.views [2.9 210324]
+	com.paterva.maltego.graph.external.api [2.4 210324]
+	com.paterva.maltego.graph.external [2.6 210324]
+	com.paterva.maltego.find [2.11 210324]
+	com.paterva.maltego.feeder [2.4 210324]
+	com.paterva.maltego.feeder.websocket [2.4 210324]
+	com.paterva.maltego.entities.transform [2.1 210324]
+	com.paterva.maltego.chatapi [2.4 210324]
+	com.paterva.maltego.chat [2.6 210324]
+	com.paterva.maltego.collab [2.15 210324]
+	com.paterva.maltego.automation [2.19 210324]
+	com.paterva.graph.store [2.15 210324]
+	com.paterva.maltego.branding [2.13 210324]
+18:06:42.669 INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
+18:07:13.726 Diagnostic information
+Input arguments:
+	-Djdk.home=/usr/lib/jvm/default-java
+	-Dnetbeans.dirs=/usr/share/maltego/maltego:/usr/share/maltego/groovy:/usr/share/maltego/ide:/usr/share/maltego/java:/usr/share/maltego/maltego-ui:/usr/share/maltego/maltego-core-platform:
+	-Dnetbeans.home=/usr/share/maltego/platform
+	-Xmx1920m
+	-XX:+UseG1GC
+	-Dsun.java2d.xrender=false
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=/home/vittoriol/.maltego/v4.2.16/var/log/heapdump.hprof
+	-Dawt.useSystemAAFontSettings=on
+	-Dswing.aatext=true
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 48.0MB maximum 1920.0MB
+Non heap memory usage: initial 7.3MB maximum -1b
+Garbage collector: G1 Young Generation (Collections=43 Total time spent=1s)
+Garbage collector: G1 Old Generation (Collections=0 Total time spent=0s)
+Classes: loaded=10108 total loaded=10108 unloaded 0
+18:07:15.040 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 3,175,903,232
+18:07:15.041 INFO [null]: Total physical memory 3,175,903,232
+18:09:07.691 INFO [com.paterva.maltego.util.NormalException]: That captcha was incorrect, please try again.
+
+com.paterva.maltego.typing.editing.inputform.InputFormException: That captcha was incorrect, please try again.
+
+	at com.paterva.maltego.typing.editing.inputform.InputFormSerializer.readFormData(InputFormSerializer.java:40)
+	at com.paterva.maltego.licensing.ui.login.A.B(CommunityLoginManager.java:74)
+	at com.paterva.maltego.licensing.ui.wizard.free.LoginResponseController.doProcessing(LoginResponseController.java:35)
+	at com.paterva.maltego.licensing.ui.wizard.free.LoginResponseController.doProcessing(LoginResponseController.java:23)
+[catch] at com.paterva.maltego.util.ui.dialog.ProgressController.lambda$start$2(ProgressController.java:93)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+18:11:35.206 INFO [com.paterva.maltego.seeds.ui.LicenseModeHubProvider]: Loading Hub
+18:11:43.778 WARNING [null]: Note - com.paterva.maltego.welcome.startpage.StartPageTopComponent ought to override getPersistenceType() rather than using the client property or accepting the default.
+18:11:44.185 INFO [com.paterva.maltego.notifications.ServerNotificationChecker]: Checking for notifications
+18:11:47.311 INFO [com.paterva.maltego.notifications.ServerNotificationChecker]: 1 notification(s)
+18:13:41.819 EDT slowness detected: 11s
+"Reference Handler" - Thread t@2
+    java.lang.Thread.State: RUNNABLE
+	at java.base@11.0.11-ea/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.11-ea/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.11-ea/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" - Thread t@3
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <483b83c6> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.11-ea/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Common-Cleaner" - Thread t@9
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <4c040e19> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.11-ea/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+	at java.base@11.0.11-ea/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"Active Reference Queue Daemon" - Thread t@12
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <90689fd> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at app//org.openide.util.lookup.implspi.ActiveQueue$Impl.removeSuper(ActiveQueue.java:70)
+	at app//org.openide.util.lookup.implspi.ActiveQueue$Daemon.run(ActiveQueue.java:108)
+
+"CLI Requests Server" - Thread t@13
+    java.lang.Thread.State: RUNNABLE
+	at java.base@11.0.11-ea/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.11-ea/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:458)
+	at java.base@11.0.11-ea/java.net.ServerSocket.implAccept(ServerSocket.java:565)
+	at java.base@11.0.11-ea/java.net.ServerSocket.accept(ServerSocket.java:533)
+	at app//org.netbeans.CLIHandler$Server.run(CLIHandler.java:1078)
+
+"Java2D Disposer" - Thread t@17
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <2cf47299> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.11-ea/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.desktop@11.0.11-ea/sun.java2d.Disposer.run(Disposer.java:144)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"AWT-XAWT" - Thread t@19
+    java.lang.Thread.State: RUNNABLE
+	at java.desktop@11.0.11-ea/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+	at java.desktop@11.0.11-ea/sun.awt.X11.XToolkit.run(XToolkit.java:684)
+	at java.desktop@11.0.11-ea/sun.awt.X11.XToolkit.run(XToolkit.java:648)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"AWT-Shutdown" - Thread t@23
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <3845e172> (a java.lang.Object)
+	at java.base@11.0.11-ea/java.lang.Object.wait(Object.java:328)
+	at java.desktop@11.0.11-ea/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"AWT-EventQueue-0" - Thread t@22
+    java.lang.Thread.State: RUNNABLE
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$Source.hashN(ZipFile.java:1364)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1553)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1288)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$Source.get(ZipFile.java:1251)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:732)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile$CleanableResource.get(ZipFile.java:849)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile.<init>(ZipFile.java:247)
+	at java.base@11.0.11-ea/java.util.zip.ZipFile.<init>(ZipFile.java:177)
+	at java.base@11.0.11-ea/java.util.jar.JarFile.<init>(JarFile.java:348)
+	at java.base@11.0.11-ea/java.util.jar.JarFile.<init>(JarFile.java:319)
+	at java.base@11.0.11-ea/java.util.jar.JarFile.<init>(JarFile.java:299)
+	at app//org.netbeans.JarClassLoader$JarSource$1.call(JarClassLoader.java:522)
+	at app//org.netbeans.JarClassLoader$JarSource$1.call(JarClassLoader.java:513)
+	at java.base@11.0.11-ea/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at app//org.netbeans.JarClassLoader$JarSource.getJarFile(JarClassLoader.java:548)
+	at app//org.netbeans.JarClassLoader$JarSource.resource(JarClassLoader.java:591)
+	at app//org.netbeans.Archive.getData(Archive.java:187)
+	at app//org.netbeans.JarClassLoader$JarSource.readClass(JarClassLoader.java:577)
+	at app//org.netbeans.JarClassLoader$Source.getClassData(JarClassLoader.java:372)
+	at app//org.netbeans.JarClassLoader.doLoadClass(JarClassLoader.java:214)
+	at app//org.netbeans.ProxyClassLoader.selfLoadClass(ProxyClassLoader.java:246)
+	- locked <2be3b5c3> (a org.netbeans.StandardModule$OneModuleClassLoader)
+	at app//org.netbeans.ProxyClassLoader.doFindClass(ProxyClassLoader.java:174)
+	at app//org.netbeans.ProxyClassLoader.loadClass(ProxyClassLoader.java:125)
+	- locked <2be3b5c3> (a org.netbeans.StandardModule$OneModuleClassLoader)
+	at java.base@11.0.11-ea/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.oracle.truffle.polyglot.EngineAccessor$EngineImpl.<clinit>(EngineAccessor.java:155)
+	at java.base@11.0.11-ea/java.lang.Class.forName0(Native Method)
+	at java.base@11.0.11-ea/java.lang.Class.forName(Class.java:398)
+	at com.oracle.truffle.api.impl.Accessor$Constants.loadSupport(Accessor.java:833)
+	at com.oracle.truffle.api.impl.Accessor$Constants.<clinit>(Accessor.java:826)
+	at com.oracle.truffle.api.impl.Accessor.engineSupport(Accessor.java:883)
+	at com.oracle.truffle.api.library.LibraryAccessor.engineAccessor(LibraryAccessor.java:61)
+	at com.oracle.truffle.api.library.LibraryFactory.loadExternalDefaultProviders(LibraryFactory.java:386)
+	at com.oracle.truffle.api.library.LibraryFactory.getExternalDefaultProviders(LibraryFactory.java:376)
+	- locked <73aa5a01> (a java.lang.Class)
+	at com.oracle.truffle.api.library.LibraryFactory.initDefaultExports(LibraryFactory.java:214)
+	at com.oracle.truffle.api.library.LibraryFactory.<init>(LibraryFactory.java:209)
+	at com.oracle.truffle.api.library.DynamicDispatchLibraryGen.<init>(DynamicDispatchLibraryGen.java:36)
+	at com.oracle.truffle.api.library.DynamicDispatchLibraryGen.<clinit>(DynamicDispatchLibraryGen.java:28)
+	at java.base@11.0.11-ea/java.lang.Class.forName0(Native Method)
+	at java.base@11.0.11-ea/java.lang.Class.forName(Class.java:398)
+	at com.oracle.truffle.api.library.LibraryFactory.loadGeneratedClass(LibraryFactory.java:667)
+	at com.oracle.truffle.api.library.LibraryFactory.resolveImpl(LibraryFactory.java:630)
+	at com.oracle.truffle.api.library.LibraryFactory.resolve(LibraryFactory.java:623)
+	at com.oracle.truffle.api.library.LibraryFactory.<init>(LibraryFactory.java:203)
+	at com.oracle.truffle.api.interop.InteropLibraryGen.<init>(InteropLibraryGen.java:133)
+	at com.oracle.truffle.api.interop.InteropLibraryGen.<clinit>(InteropLibraryGen.java:124)
+	at java.base@11.0.11-ea/java.lang.Class.forName0(Native Method)
+	at java.base@11.0.11-ea/java.lang.Class.forName(Class.java:398)
+	at com.oracle.truffle.api.library.LibraryFactory.loadGeneratedClass(LibraryFactory.java:667)
+	at com.oracle.truffle.api.library.LibraryFactory.resolveImpl(LibraryFactory.java:630)
+	at com.oracle.truffle.api.library.LibraryFactory.resolve(LibraryFactory.java:623)
+	at com.oracle.truffle.api.interop.InteropLibrary.<clinit>(InteropLibrary.java:1786)
+	at com.oracle.truffle.polyglot.PolyglotValue.<clinit>(PolyglotValue.java:125)
+	at com.oracle.truffle.polyglot.PolyglotImpl.initialize(PolyglotImpl.java:120)
+	at org.graalvm.polyglot.impl.AbstractPolyglotImpl.setConstructors(AbstractPolyglotImpl.java:208)
+	at org.graalvm.polyglot.Engine$1.run(Engine.java:724)
+	at org.graalvm.polyglot.Engine$1.run(Engine.java:692)
+	at java.base@11.0.11-ea/java.security.AccessController.doPrivileged(Native Method)
+	at org.graalvm.polyglot.Engine.initEngineImpl(Engine.java:692)
+	at org.graalvm.polyglot.Engine.access$000(Engine.java:106)
+	at org.graalvm.polyglot.Engine$ImplHolder.<clinit>(Engine.java:115)
+	at org.graalvm.polyglot.Engine.getImpl(Engine.java:288)
+	at org.graalvm.polyglot.Engine$Builder.build(Engine.java:526)
+	at com.oracle.truffle.js.scriptengine.GraalJSEngineFactory.<init>(GraalJSEngineFactory.java:95)
+	at java.base@11.0.11-ea/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@11.0.11-ea/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base@11.0.11-ea/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@11.0.11-ea/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base@11.0.11-ea/java.util.ServiceLoader$ProviderImpl$2.run(ServiceLoader.java:788)
+	at java.base@11.0.11-ea/java.security.AccessController.doPrivileged(Native Method)
+	at java.base@11.0.11-ea/java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:793)
+	at java.base@11.0.11-ea/java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:722)
+	at java.base@11.0.11-ea/java.util.ServiceLoader$3.next(ServiceLoader.java:1395)
+	at platform/java.scripting@11.0.11-ea/javax.script.ScriptEngineManager.initEngines(ScriptEngineManager.java:125)
+	at platform/java.scripting@11.0.11-ea/javax.script.ScriptEngineManager.init(ScriptEngineManager.java:87)
+	at platform/java.scripting@11.0.11-ea/javax.script.ScriptEngineManager.<init>(ScriptEngineManager.java:62)
+	at com.paterva.maltego.view.customization.ui.script.BindingScriptImpl.<init>(BindingScriptImpl.java:19)
+	at com.paterva.maltego.view.customization.ui.serialize.DefaultViewletSerializer.translate(DefaultViewletSerializer.java:87)
+	at com.paterva.maltego.view.customization.ui.serialize.DefaultViewletSerializer.translate(DefaultViewletSerializer.java:35)
+	at com.paterva.maltego.view.customization.ui.serialize.DefaultViewletSerializer.read(DefaultViewletSerializer.java:22)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.load(DefaultViewletRegistry.java:148)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.load(DefaultViewletRegistry.java:108)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.load(DefaultViewletRegistry.java:91)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.getAll(DefaultViewletRegistry.java:50)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.getViewlets(DefaultViewletRegistry.java:56)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletRegistry.getAll(DefaultViewletRegistry.java:43)
+	at com.paterva.maltego.view.customization.ui.ViewletToolbar.addViewletToolbarActions(ViewletToolbar.java:51)
+	at com.paterva.maltego.view.customization.ui.ViewletToolbar.populateToolbar(ViewletToolbar.java:47)
+	at com.paterva.maltego.view.customization.ui.ViewletToolbar.<init>(ViewletToolbar.java:32)
+	at com.paterva.maltego.view.customization.ui.DefaultViewletToolbarFactory.create(DefaultViewletToolbarFactory.java:13)
+	at com.paterva.maltego.view.ball.BallPainterToolbarPanel.<init>(BallPainterToolbarPanel.java:40)
+	at com.paterva.maltego.view.ball.BallEntityPainter.createToolbarComponent(BallEntityPainter.java:62)
+	at com.paterva.maltego.layout.view.LayoutViewAdapter.getLayoutToolbar(LayoutViewAdapter.java:237)
+	- locked <545d44a5> (a com.paterva.maltego.view.mining.MiningView)
+	at com.paterva.maltego.layout.view.LayoutViewAdapter.getToolbar(LayoutViewAdapter.java:212)
+	at com.paterva.maltego.ui.graph.impl.GraphViewElement.getToolbarRepresentation(GraphViewElement.java:191)
+	at org.netbeans.core.multiview.MultiViewPeer.peerComponentShowing(MultiViewPeer.java:314)
+	at org.netbeans.core.multiview.MultiViewCloneableTopComponent.componentShowing(MultiViewCloneableTopComponent.java:109)
+	at org.openide.windows.WindowManager.componentShowing(WindowManager.java:314)
+	at org.netbeans.core.windows.WindowManagerImpl.componentShowing(WindowManagerImpl.java:1240)
+	at org.netbeans.core.windows.view.DefaultView.changeGUI(DefaultView.java:143)
+	at org.netbeans.core.windows.ViewRequestor.dispatchRequest(ViewRequestor.java:250)
+	at org.netbeans.core.windows.ViewRequestor.processRequest(ViewRequestor.java:226)
+	at org.netbeans.core.windows.ViewRequestor.postRequest(ViewRequestor.java:164)
+	at org.netbeans.core.windows.ViewRequestor.scheduleRequest(ViewRequestor.java:102)
+	at org.netbeans.core.windows.Central.addModeOpenedTopComponent(Central.java:766)
+	at org.netbeans.core.windows.ModeImpl.addOpenedTopComponent(ModeImpl.java:333)
+	at org.netbeans.core.windows.WindowManagerImpl.topComponentOpenAtTabPosition(WindowManagerImpl.java:1309)
+	at org.netbeans.core.windows.WindowManagerImpl.topComponentOpen(WindowManagerImpl.java:1266)
+	at org.openide.windows.TopComponent.open(TopComponent.java:472)
+	at org.openide.windows.TopComponent.open(TopComponent.java:452)
+	at org.openide.windows.CloneableOpenSupport.openCloneableTopComponent(CloneableOpenSupport.java:183)
+	- locked <692976b2> (a java.awt.Component$AWTTreeLock)
+	at org.openide.windows.CloneableOpenSupport$1.run(CloneableOpenSupport.java:82)
+	at app//org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEvent(NbMutexEventProvider.java:95)
+	at app//org.netbeans.modules.openide.util.NbMutexEventProvider$Event.writeAccess(NbMutexEventProvider.java:60)
+	at app//org.netbeans.modules.openide.util.LazyMutexImplementation.writeAccess(LazyMutexImplementation.java:56)
+	at app//org.openide.util.Mutex.writeAccess(Mutex.java:285)
+	at org.openide.windows.CloneableOpenSupport.open(CloneableOpenSupport.java:79)
+	at com.paterva.maltego.ui.graph.data.GraphEditorSupport.open(GraphEditorSupport.java:319)
+	at com.paterva.maltego.ui.graph.actions.OpenTemplateAction.performAction(OpenTemplateAction.java:46)
+	at app//org.openide.util.actions.CallableSystemAction$1.run(CallableSystemAction.java:105)
+	at app//org.openide.util.actions.ActionInvoker$1.run(ActionInvoker.java:70)
+	at app//org.openide.util.actions.ActionInvoker.doPerformAction(ActionInvoker.java:91)
+	at app//org.openide.util.actions.ActionInvoker.invokeAction(ActionInvoker.java:74)
+	at app//org.openide.util.actions.CallableSystemAction.actionPerformed(CallableSystemAction.java:102)
+	at org.pushingpixels.flamingo.api.common.AbstractCommandButton.fireActionPerformed(AbstractCommandButton.java:614)
+	at org.pushingpixels.flamingo.api.common.AbstractCommandButton$ActionHandler.actionPerformed(AbstractCommandButton.java:566)
+	at java.desktop@11.0.11-ea/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at org.pushingpixels.flamingo.api.common.model.ActionRepeatableButtonModel.setPressed(ActionRepeatableButtonModel.java:121)
+	at org.pushingpixels.flamingo.internal.ui.common.BasicCommandButtonListener.mouseReleased(BasicCommandButtonListener.java:145)
+	at org.officelaf.ribbon.OfficeCommandButtonUI$2.mouseReleased(OfficeCommandButtonUI.java:73)
+	at java.desktop@11.0.11-ea/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop@11.0.11-ea/java.awt.Component.processMouseEvent(Component.java:6635)
+	at java.desktop@11.0.11-ea/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop@11.0.11-ea/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop@11.0.11-ea/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop@11.0.11-ea/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop@11.0.11-ea/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop@11.0.11-ea/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop@11.0.11-ea/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop@11.0.11-ea/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop@11.0.11-ea/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop@11.0.11-ea/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop@11.0.11-ea/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop@11.0.11-ea/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base@11.0.11-ea/java.security.AccessController.doPrivileged(Native Method)
+	at java.base@11.0.11-ea/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base@11.0.11-ea/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base@11.0.11-ea/java.security.AccessController.doPrivileged(Native Method)
+	at java.base@11.0.11-ea/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop@11.0.11-ea/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop@11.0.11-ea/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+"FileSystemWatchService" - Thread t@28
+    java.lang.Thread.State: RUNNABLE
+	at java.base@11.0.11-ea/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@11.0.11-ea/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:316)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"File Watcher" - Thread t@29
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <66c6b1b4> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:483)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:671)
+	at java.base@11.0.11-ea/sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+	at org.netbeans.modules.masterfs.watcher.nio2.NioNotifier.nextEvent(NioNotifier.java:72)
+	at org.netbeans.modules.masterfs.providers.Notifier$1.nextEvent(Notifier.java:99)
+	at org.netbeans.modules.masterfs.watcher.Watcher$Ext.run(Watcher.java:322)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Event Dispatch Thread" - Thread t@32
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <711f826f> (a java.util.LinkedList)
+	at java.base@11.0.11-ea/java.lang.Object.wait(Object.java:328)
+	at java.prefs@11.0.11-ea/java.util.prefs.AbstractPreferences$EventDispatchThread.run(AbstractPreferences.java:1529)
+
+"TimerQueue" - Thread t@36
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <6d67eb3a> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.11-ea/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+	at java.desktop@11.0.11-ea/javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+   Locked ownable synchronizers:
+	- locked <4f598885> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"ForkJoinPool.commonPool-worker-3" - Thread t@37
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <3e7fbc33> (a java.util.concurrent.ForkJoinPool)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1628)
+	at java.base@11.0.11-ea/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+"KeyTipManager processing thread" - Thread t@38
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <337e4d69> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at org.pushingpixels.flamingo.internal.utils.KeyTipManager$ProcessingThread.run(KeyTipManager.java:519)
+
+"Darcula Animations" - Thread t@46
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <3060f623> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.11-ea/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.11-ea/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Inactive RequestProcessor thread [Was:Folder recognizer/org.openide.loaders.FolderList$ListTask]" - Thread t@65
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <620cf52e> (a java.lang.Object)
+	at app//org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:1977)
+
+"Slowness detector timer" - Thread t@76
+    java.lang.Thread.State: RUNNABLE
+	at java.management@11.0.11-ea/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@11.0.11-ea/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:521)
+	at java.management@11.0.11-ea/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:509)
+	at com.paterva.maltego.util.SlownessDetector.getThreadDump(SlownessDetector.java:101)
+	at com.paterva.maltego.util.SlownessDetector.dumpThreads(SlownessDetector.java:90)
+	- locked <3ec80e00> (a java.lang.Class)
+	at com.paterva.maltego.util.SlownessDetector.access$500(SlownessDetector.java:20)
+	at com.paterva.maltego.util.SlownessDetector$1.run(SlownessDetector.java:65)
+	at java.base@11.0.11-ea/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base@11.0.11-ea/java.util.TimerThread.run(Timer.java:506)
+
+"Timer-0" - Thread t@79
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <21514378> (a java.util.TaskQueue)
+	at java.base@11.0.11-ea/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@11.0.11-ea/java.util.TimerThread.run(Timer.java:506)
+
+"Session Expired Check" - Thread t@80
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <6085473e> (a java.util.TaskQueue)
+	at java.base@11.0.11-ea/java.lang.Object.wait(Object.java:328)
+	at java.base@11.0.11-ea/java.util.TimerThread.mainLoop(Timer.java:527)
+	at java.base@11.0.11-ea/java.util.TimerThread.run(Timer.java:506)
+
+"License Expired Check" - Thread t@81
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <576374e3> (a java.util.TaskQueue)
+	at java.base@11.0.11-ea/java.lang.Object.wait(Object.java:328)
+	at java.base@11.0.11-ea/java.util.TimerThread.mainLoop(Timer.java:527)
+	at java.base@11.0.11-ea/java.util.TimerThread.run(Timer.java:506)
+
+"Capability Monitor 1" - Thread t@82
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <52c35ea4> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Inactive RequestProcessor thread [Was:Folder recognizer/org.openide.loaders.FolderList$ComparatorTask]" - Thread t@104
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <79a29d07> (a java.lang.Object)
+	at app//org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:1977)
+
+"Trident callback thread" - Thread t@162
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <335499ba> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at org.pushingpixels.trident.TimelineEngine$TimelineCallbackThread.run(TimelineEngine.java:213)
+
+"Trident pulse source thread" - Thread t@163
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Thread.sleep(Native Method)
+	at org.pushingpixels.trident.TridentConfig$FixedRatePulseSource.waitUntilNextPulse(TridentConfig.java:68)
+	at org.pushingpixels.trident.TimelineEngine$TridentAnimationThread.run(TimelineEngine.java:189)
+
+"Sound Player 1" - Thread t@168
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <7fdc375f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Java Sound Event Dispatcher" - Thread t@169
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <37a2707e> (a com.sun.media.sound.EventDispatcher)
+	at java.base@11.0.11-ea/java.lang.Object.wait(Object.java:328)
+	at java.desktop@11.0.11-ea/com.sun.media.sound.EventDispatcher.dispatchEvents(EventDispatcher.java:174)
+	at java.desktop@11.0.11-ea/com.sun.media.sound.EventDispatcher.run(EventDispatcher.java:213)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Sound Player 2" - Thread t@171
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <7fdc375f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"Sound Player 3" - Thread t@174
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <7fdc375f> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+"RequestProcessor queue manager" - Thread t@183
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <7decd042> (a java.lang.Class)
+	at app//org.openide.util.RequestProcessor$TickTac.obtainFirst(RequestProcessor.java:2257)
+	at app//org.openide.util.RequestProcessor$TickTac.run(RequestProcessor.java:2233)
+
+"License Monitor" - Thread t@184
+    java.lang.Thread.State: TIMED_WAITING
+	at java.base@11.0.11-ea/java.lang.Object.wait(Native Method)
+	- waiting on <5a859928> (a java.util.TaskQueue)
+	at java.base@11.0.11-ea/java.util.TimerThread.mainLoop(Timer.java:553)
+	at java.base@11.0.11-ea/java.util.TimerThread.run(Timer.java:506)
+
+"SpecRegistry Async 1" - Thread t@185
+    java.lang.Thread.State: WAITING
+	at java.base@11.0.11-ea/jdk.internal.misc.Unsafe.park(Native Method)
+	- parking to wait for <4d8b428b> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.11-ea/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.11-ea/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.11-ea/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.11-ea/java.lang.Thread.run(Thread.java:829)
+
+18:13:47.985 INFO [com.paterva.maltego.mtgx.imex.MtgxSerializer]: Opening graph mtgx9465548367514081282.tmp
+18:13:49.073 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+18:13:49.075 SLF4J: Defaulting to no-operation (NOP) logger implementation
+18:13:49.075 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+18:13:53.909 INFO [com.paterva.maltego.mtgx.imex.MtgxSerializer]: Done opening graph (5.923s)
+18:18:26.398 INFO [com.paterva.maltego.mtgx.imex.MtgxSerializer]: Opening graph mtgx12015222320081381102.tmp
+18:18:26.505 INFO [com.paterva.maltego.mtgx.imex.MtgxSerializer]: Done opening graph (0.107s)
+18:19:59.364 WARNING [com.paterva.maltego.util.SlownessDetector]: EDT slowness detected: 11s
+18:20:10.269 WARNING [com.paterva.maltego.util.SlownessDetector]: EDT slowness detected: 22s
+18:44:05.526 WARNING [org.openide.util.WeakListenerImpl]: Can't remove com.paterva.maltego.typing.descriptor.RegistryListener using method com.paterva.maltego.graph.table.ui.DefaultMappingRegistry.removeRegistryListener from com.paterva.maltego.graph.table.ui.DefaultMappingRegistry@251b34f6
